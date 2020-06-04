@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //設定全螢幕顯示
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -24,8 +25,10 @@ public class MainActivity extends AppCompatActivity {
         //設定螢幕為橫式
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
 
+
         setContentView(R.layout.activity_main);
     }
+
     public void StartGame(View v){
         Intent it = new Intent();
         it.setClass(this, GameActivity.class);
@@ -36,5 +39,6 @@ public class MainActivity extends AppCompatActivity {
     public void EndApp(View v){
         finish();
     }
+
 
 }
