@@ -64,7 +64,7 @@
         android:layout_marginTop="72dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="請輸入綠燈秒數"
+        android:hint="請輸入綠燈秒數"
         app:layout_constraintEnd_toStartOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/gl1"
@@ -79,7 +79,7 @@
         android:layout_marginTop="72dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="請輸入黃燈秒數"
+        android:hint="請輸入黃燈秒數"
         app:layout_constraintEnd_toStartOf="@+id/editText3"
         app:layout_constraintStart_toEndOf="@+id/editText1"
         app:layout_constraintTop_toTopOf="@+id/gl1" />
@@ -91,7 +91,7 @@
         android:layout_marginTop="72dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="請輸入紅燈秒數"
+        android:hint="請輸入紅燈秒數"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editText2"
         app:layout_constraintTop_toTopOf="@+id/gl1" />
