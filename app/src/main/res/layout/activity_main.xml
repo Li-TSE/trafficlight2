@@ -58,20 +58,20 @@
         tools:ignore="OnClick" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/edt1"
         android:layout_width="172dp"
         android:layout_height="45dp"
         android:layout_marginTop="72dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="請輸入綠燈秒數"
-        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintEnd_toStartOf="@+id/edt2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/gl1"
         app:layout_constraintVertical_chainStyle="spread" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edt2"
         android:layout_width="171dp"
         android:layout_height="45dp"
         android:layout_marginStart="48dp"
@@ -80,12 +80,12 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="請輸入黃燈秒數"
-        app:layout_constraintEnd_toStartOf="@+id/editText3"
-        app:layout_constraintStart_toEndOf="@+id/editText1"
+        app:layout_constraintEnd_toStartOf="@+id/edt3"
+        app:layout_constraintStart_toEndOf="@+id/edt1"
         app:layout_constraintTop_toTopOf="@+id/gl1" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edt3"
         android:layout_width="188dp"
         android:layout_height="47dp"
         android:layout_marginTop="72dp"
@@ -93,7 +93,7 @@
         android:inputType="textPersonName"
         android:hint="請輸入紅燈秒數"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toEndOf="@+id/edt2"
         app:layout_constraintTop_toTopOf="@+id/gl1" />
 
 
