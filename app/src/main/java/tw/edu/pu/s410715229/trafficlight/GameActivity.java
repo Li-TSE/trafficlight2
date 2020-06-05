@@ -61,7 +61,7 @@ public class GameActivity extends AppCompatActivity implements DialogInterface.O
             }
 
         });
-        alertDialog.setNegativeButton("再玩一次", new DialogInterface.OnClickListener() {
+        alertDialog.setNegativeButton("再玩一次 ", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
                 decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
