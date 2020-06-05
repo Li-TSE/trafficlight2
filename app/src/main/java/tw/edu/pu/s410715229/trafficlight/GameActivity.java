@@ -54,14 +54,14 @@ public class GameActivity extends AppCompatActivity implements DialogInterface.O
         alertDialog = new AlertDialog.Builder(this);
         alertDialog.setTitle("闖紅燈哦 三寶 ");
         alertDialog.setIcon(R.drawable.ic_launcher_background);
-        alertDialog.setPositiveButton("爽拉", new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton("結束系統", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
                 finish();
             }
 
         });
-        alertDialog.setNegativeButton("繼續闖紅燈囉", new DialogInterface.OnClickListener() {
+        alertDialog.setNegativeButton("再玩一次", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
                 decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -104,7 +104,7 @@ public class GameActivity extends AppCompatActivity implements DialogInterface.O
                 lightTimer.removeCallbacks(lightTransfer);//撤銷執行續
                 toast.show();
 
-                alertDialog.setMessage("您很愛闖紅燈嘛？ 你走了 " + String.valueOf(GameSV.step) + "步");
+                alertDialog.setMessage("您此次的成績是" + String.valueOf(GameSV.step) + "分，不可以闖紅燈喔");
                 alertDialog.show();
             }
 
